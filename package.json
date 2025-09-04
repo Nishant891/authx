@@ -1,0 +1,27 @@
+{
+  "name": "authx",
+  "version": "1.0.0",
+  "description": "Complete JWT based OAuth system with client, server components and OTP verification using Resend and MongoDB as database. Modular MVC architecture, pre-ChatGPT era, robust authentication on top of it",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*",
+    "client/**/*",
+    "server/**/*",
+    "README.md",
+    ".env.example"
+  ],
+  "scripts": {
+    "build": "npm run build:server && npm run build:client",
+    "build:server": "cd server && npm run build",
+    "build:client": "cd client && npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["oauth", "authentication", "nextjs", "express"],
+  "author": "Nishant Sharma",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nishant891/authx"
+  }
+}

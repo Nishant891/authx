@@ -15,10 +15,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const corsOptions = {
-    origin: 'http://localhost:3000', // Replace with your frontend domain
-    methods: 'GET,POST,PUT,DELETE', // Specify allowed HTTP methods
-    allowedHeaders: 'Content-Type,Authorization', // Specify allowed headers
-    credentials: true // Allow cookies to be sent cross-origin
+    origin: process.env.FRONTEND_URI, 
+    methods: 'GET,POST,PUT,DELETE',
+    allowedHeaders: 'Content-Type,Authorization', 
+    credentials: true
 };
 
 app.use(cors(corsOptions));
@@ -28,6 +28,6 @@ app.use(router);
 const PORT = process.env.PORT || "";
 
 app.listen(PORT, () => {
-    console.log(`Alpha is online on ${PORT}`);
+    console.log(`Authx is online on ${PORT}`);
     connectDB();
 });

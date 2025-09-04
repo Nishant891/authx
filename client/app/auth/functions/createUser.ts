@@ -16,7 +16,7 @@ export interface Return {
 export const createUser = async (user : User,) => {
     
     try {
-        const response = await axios.post("http://localhost:8000/signup", {
+        const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URI}/signup`, {
             ...user
         });
 

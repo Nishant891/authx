@@ -20,7 +20,7 @@ export interface User {
 export const createOTP = async (user : User, setUser : Function, setActivationCode : Function) => {
     
     try {
-        const response = await axios.post("http://localhost:8000/verification", {
+        const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URI}/verification`, {
             ...user
         });
 

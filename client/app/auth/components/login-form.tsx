@@ -45,7 +45,7 @@ export const LoginForm = () => {
   const [successMessage, setSuccessMessage] = useState("");
 
   const handleSubmit = async (values : User) => {
-    const response : AxiosResponse = await axios.post("http://localhost:8000/login", {
+    const response : AxiosResponse = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URI}/login`, {
         ...values
     });
     if(response.data){
