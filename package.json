@@ -1,5 +1,5 @@
 {
-  "name": "authx",
+  "name": "jwt-authx",
   "version": "1.0.0",
   "description": "Complete JWT based OAuth system with client, server components and OTP verification using Resend and MongoDB as database. Modular MVC architecture, pre-ChatGPT era, robust authentication on top of it",
   "main": "lib/index.js",
