@@ -4,9 +4,7 @@
 
 # Description
 
-Complete JWT based OAuth system with client, server components and OTP verification using Resend and MongoDB as database.
-
-This project implements a **JWT-based authentication and authorization system** with built-in **Two-Factor Authentication (2FA)** support.  
+Complete JWT-based OAuth system with client and server components, featuring OTP verification via Resend and MongoDB as the database. This package provides a robust authentication and authorization framework with built-in Two-Factor Authentication (2FA) support, making it secure, scalable, and easy to integrate into modern applications. 
 
 ## ✨ Features  
 - Secure login and signup with JWT tokens  

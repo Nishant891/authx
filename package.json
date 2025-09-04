@@ -1,7 +1,7 @@
 {
   "name": "jwt-authx",
   "version": "1.0.0",
-  "description": "Complete JWT based OAuth system with client, server components and OTP verification using Resend and MongoDB as database. Modular MVC architecture, pre-ChatGPT era, robust authentication on top of it",
+  "description": "Complete JWT-based OAuth system with client and server components, featuring OTP verification via Resend and MongoDB as the database. This package provides a robust authentication and authorization framework with built-in Two-Factor Authentication (2FA) support, making it secure, scalable, and easy to integrate into modern applications.",
   "main": "lib/index.js",
   "files": [
     "lib/**/*",
