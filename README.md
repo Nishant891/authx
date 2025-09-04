@@ -1,4 +1,4 @@
-# 🔐 AuthX : JWT Authentication & Authorization with 2FA  
+# 🔐 jwt-authx : JWT Authentication & Authorization with 2FA  
 
 [🎥 Demo on Loom](https://www.loom.com/share/9fd1e498fadf44daa73dcc3c2ef72fde)  
 
@@ -19,14 +19,14 @@ This project implements a **JWT-based authentication and authorization system** 
 ## Installation
 
 ```bash
-npm install authx
+npm install jwt-authx
 
 ## Quick Setup
 
 ## 1. Copy the environment template
 
 ```bash
-cp node_modules/authx/.env.example .env
+cp node_modules/jwt-authx/.env.example .env
 ```
 
 Then fill in your environment variables in `.env`.
@@ -36,7 +36,7 @@ Then fill in your environment variables in `.env`.
 Copy the client code to your project or use it as reference:
 
 ```bash
-cp -r node_modules/authx/client/* ./
+cp -r node_modules/jwt-authx/client/* ./
 ```
 
 ## 3. For the Server (Express)
@@ -44,7 +44,7 @@ cp -r node_modules/authx/client/* ./
 Copy the server code to your project or use it as reference:
 
 ```bash
-cp -r node_modules/authx/server/* ./
+cp -r node_modules/jwt-authx/server/* ./
 ```
 
 
